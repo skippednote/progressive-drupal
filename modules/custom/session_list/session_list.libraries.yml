@@ -1,0 +1,13 @@
+sessions:
+  version: 1.0
+  js:
+    js/SessionList.js: {}
+  dependencies:
+    - core/drupalSettings
+    - session_list/react-deps
+
+
+react-deps:
+  version: 1.0
+  js:
+    js/vendor.js: {}

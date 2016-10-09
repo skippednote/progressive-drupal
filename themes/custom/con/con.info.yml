@@ -1,0 +1,12 @@
+name: Con
+type: theme
+description: Theme to demonstrate Progressive Decoupling.
+core: 8.x
+libraries:
+    - con/sessions_list
+    - con/drupal_news
+regions:
+    header: Header
+    content: Content
+    siderbar: Sidebar
+    footer: Footer

@@ -1,0 +1,7 @@
+session_list.session_list_index:
+  path: '/sessions'
+  defaults:
+    _controller: '\Drupal\session_list\Controller\SessionList::index'
+    _title: 'Sessions'
+  requirements:
+    _permission: 'access content'

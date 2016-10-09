@@ -1,0 +1,11 @@
+sessions_list:
+    version: 1.0
+    js:
+        js/sessions-list.js: {}
+    dependencies:
+        - con/vendor
+
+vendor:
+    version: 1.0
+    js:
+        js/vendor.js: { minified: true }

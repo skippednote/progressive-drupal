@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains session_list.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function session_list_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the session_list module.
+    case 'help.page.session_list':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Session List') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function session_list_theme($existing, $type, $theme, $path) {
+  $theme = [
+    'session_list' => [
+      'variables' => [
+        'sessions' => NULL,
+      ],
+    ],
+  ];
+
+  return $theme;
+}

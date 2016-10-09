@@ -1,0 +1,5 @@
+name: Session List
+type: module
+description: React Component: List of Sessions
+core: 8.x
+package: React Component
